@@ -7,6 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+    if (!isset($_SESSION['user'])) {
+        header('location:index.php?page=connexion');
+    }
+    function viewIsExist(String $nameViewRequested): String {
+        $serverViewPath = Constants::getViewPath();
+        $fileRequested = trim(strtolower($nameViewRequested)) . '.view' . '.php';
+        return $serverViewPath . $fileRequested;
+    }
+
+    $pageRequested = viewIsExist($_GET['page']);
+
+    if (file_exists($pageRequested)) {
+        if ($_GET['page'] == "404") {
+            http_response_code(404);
+            include('view/404.view.php');
+        } else {
+            include($pageRequested);
+        }
+    } else {
+        http_response_code(404);
+        include('view/404.view.php');
+    }
+    ?>
 </body>
 </html>
