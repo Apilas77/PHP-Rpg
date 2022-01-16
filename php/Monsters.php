@@ -1,8 +1,8 @@
 <?php
 class MonsterBase {
-    $name;
-    $level;
-    $arme;
+    private $name;
+    private $level;
+    private $arme;
 
     public function __construct($name, $level) {
         $this->name = $name;
@@ -10,7 +10,7 @@ class MonsterBase {
         $this->arme = $arme = "baton";
     }
     # GETTER
-    public function getName()) {
+    public function getName() {
         return $this->name;
     }
     public function getLevel() {

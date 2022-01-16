@@ -1,0 +1,65 @@
+
+#toprow{
+    display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  height: 400px;
+  align-items: flex-end;
+}
+#megaMan{
+   
+}
+#megaMan img{
+    height: 200px;
+    
+}
+#Vaygar{
+    
+}
+#Vaygar img{
+    transform: scaleX(-1);
+    height: 250px;
+  
+}
+.chars{
+    margin: 20px;;
+}
+#bottomrow{
+
+    padding: 10px;
+    font: 15pt Arial;
+    text-align: center;
+}
+.buttonStyle{
+    background-color: grey;
+    border: 3px solid;
+    border-color: white;
+    border-radius: 20px;
+    font:24pt Arial ;
+    padding: 10px 35px;
+}
+.buttonStyle:hover{
+    background-color: black;
+    color: white;
+}
+.stats{
+    width: 300px;
+    height: 400px;
+    visibility: hidden;
+}
+.healthlabel{
+    font : 18pt Arial;
+    font-weight: bold;
+
+}
+.hpBorder{
+    width: 350px;
+    height: 30px;
+    border: 3px solid;
+    border-color: black;
+}
+.hpbar{
+    width: 300px;
+    height: 30px;
+    background-color: green;
+}

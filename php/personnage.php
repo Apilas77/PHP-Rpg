@@ -13,7 +13,7 @@ class PersonnageBase extends Weapon {
     }
 
     # GETTER
-    public function getPseudo()) {
+    public function getPseudo(){
         return $this->pseudo;
     }
     public function getNiveau() {
@@ -38,7 +38,7 @@ class PersonnageBase extends Weapon {
         $this->niveau++;
     }
     public function AttackBase() {
-        $this->arme
+        $this->arme;
     }
 }
 

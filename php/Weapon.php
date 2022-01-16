@@ -1,18 +1,18 @@
 <?php
 class WeaponBase {
-    $name;
-    $rarity;
-    $type;
-    $dammage;
+    private $name;
+    private $rarity;
+    private $type;
+    private $dammage;
 
-    public function __construct($name, $rarity, $type, $dammage) {
+    public function __construct($name, $dammage) {
         $this->name = $name;
         $this->rarity = $rarity;
         $this->type = $type;
         $this->dammage = $dammage;
     }
     # GETTER
-    public function getName()) {
+    public function getName() {
         return $this->name;
     }
     public function getRarity() {
